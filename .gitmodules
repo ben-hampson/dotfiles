@@ -28,3 +28,6 @@
 [submodule ".config/alacritty/catpuccin"]
 	path = .config/alacritty/catpuccin
 	url = https://github.com/catppuccin/alacritty.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
