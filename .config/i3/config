@@ -181,3 +181,5 @@ bar {
  
 exec_always nitrogen --restore
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+exec_always feh --bg-fill ~/home/ben/.config/i3/wallpaper.jpg
