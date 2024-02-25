@@ -1,4 +1,4 @@
-import = ["/Users/ben/.config/alacritty/coolnight.toml"]
+import = ["coolnight.toml"]
 live_config_reload = true
 
 [font]
