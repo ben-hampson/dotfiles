@@ -1,4 +1,4 @@
-import = ["coolnight.toml"]
+import = ["~/.config/alacritty/catpuccin/catppuccin-mocha.toml"]
 live_config_reload = true
 
 [font]
