@@ -2,7 +2,7 @@ import = ["/Users/ben/.config/alacritty/coolnight.toml"]
 live_config_reload = true
 
 [font]
-size = 14.0
+size = 10.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
@@ -32,16 +32,8 @@ mods = "Command"
 save_to_clipboard = true
 
 [window]
-decorations = "buttonless"
+decorations = "Full"
 opacity = 1
-
-# [window.dimensions]
-# columns = 2000
-# lines = 20
-
-# [window.position]
-# x = 0
-# y = 0
 
 [scrolling]
 history = 10000
