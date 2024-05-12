@@ -57,7 +57,9 @@ alias tfv="terraform validate"
 system=$(uname)
 
 if [[ "$system" == "Darwin" ]]; then
-        source ~/pomodoro-mac.sh
+  source ~/pomodoro-mac.sh
+elif [[ "$system" == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 
