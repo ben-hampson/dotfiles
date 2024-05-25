@@ -47,6 +47,8 @@ alias tfi="terraform init"
 alias tfp="terraform plan"
 alias tfa="terraform apply"
 alias tfv="terraform validate"
+alias trno="trans --brief :no"
+alias tren="trans --brief :en"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
