@@ -24,6 +24,8 @@ plugins=(git asdf zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+bindkey '^y' autosuggest-accept
+
 # User configuration
 export LANG="en_GB.UTF-8"
 export EDITOR="nvim"
