@@ -1,5 +1,11 @@
 #! /bin/bash
 
+if [[ -z $2 ]]; then
+    MESSAGE=" "
+else 
+    MESSAGE="$2"
+fi
+
 sendemail -l ~/log/email.log \
       -f "$PERSONAL_EMAIL_USER" \
       -t "$THINGS_INBOX_EMAIL_ADDRESS" \
@@ -8,4 +14,4 @@ sendemail -l ~/log/email.log \
       -xu "$PERSONAL_EMAIL_USER" \
       -xp "$PERSONAL_EMAIL_PASSWORD" \
       -u "$1" \
-      -m "$2"
+      -m "$MESSAGE"
