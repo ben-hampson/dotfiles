@@ -66,6 +66,7 @@ system=$(uname)
 if [[ "$system" == "Darwin" ]]; then
   source ~/pomodoro-mac.sh
 elif [[ "$system" == "Linux" ]]; then
+  source ~/pomodoro-linux.sh
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
