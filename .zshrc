@@ -30,6 +30,8 @@ bindkey '^y' autosuggest-accept
 export LANG="en_GB.UTF-8"
 export EDITOR="nvim"
 
+export HOMEBREW_NO_ENV_HINTS="1"
+
 export PATH="$PATH:$HOME/.local/bin"  # poetry
 
 # Aliases
@@ -68,6 +70,7 @@ if [[ "$system" == "Darwin" ]]; then
 elif [[ "$system" == "Linux" ]]; then
   source ~/pomodoro-linux.sh
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  alias clipb="xclip -selection clipboard"
 fi
 
 
