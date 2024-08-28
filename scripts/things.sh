@@ -1,17 +1,12 @@
 #! /bin/bash
 
+SUBJECT=$1
+
 if [[ -z $2 ]]; then
     MESSAGE=" "
 else 
     MESSAGE="$2"
 fi
 
-sendemail -l ~/log/email.log \
-      -f "$PERSONAL_EMAIL_USER" \
-      -t "$THINGS_INBOX_EMAIL_ADDRESS" \
-      -s "smtp.gmail.com:587" \
-      -o tls=yes \
-      -xu "$PERSONAL_EMAIL_USER" \
-      -xp "$PERSONAL_EMAIL_PASSWORD" \
-      -u "$1" \
-      -m "$MESSAGE"
+echo "$MESSAGE" | mutt -s "$SUBJECT" $THINGS_INBOX_EMAIL_ADDRESS
+
