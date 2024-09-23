@@ -49,6 +49,7 @@ alias tfa="terraform apply"
 alias tfv="terraform validate"
 alias trno="trans --brief :no"
 alias tren="trans --brief :en"
+alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One'"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
