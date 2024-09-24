@@ -54,7 +54,7 @@ alias tfv="terraform validate"
 alias transn="trans --brief :no"
 alias transe="trans --brief :en"
 alias things="~/scripts/things.sh"
-alias ngpt="sgpt --model gpt-4o --role 'Norwegian All-in-One'"
+alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One'"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
