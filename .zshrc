@@ -33,6 +33,7 @@ export EDITOR="nvim"
 export HOMEBREW_NO_ENV_HINTS="1"
 
 export PATH="$PATH:$HOME/.local/bin"  # poetry
+export PATH="$PATH:$HOME/scripts"
 
 # Aliases
 alias k="kubectl"
@@ -51,8 +52,8 @@ alias tfi="terraform init"
 alias tfp="terraform plan"
 alias tfa="terraform apply"
 alias tfv="terraform validate"
-alias transn="trans --brief :no"
-alias transe="trans --brief :en"
+alias tn="trans --brief :no"
+alias te="trans --brief :en"
 alias things="~/scripts/things.sh"
 alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One'"
 
