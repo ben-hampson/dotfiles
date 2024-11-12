@@ -34,6 +34,7 @@ export HOMEBREW_NO_ENV_HINTS="1"
 
 export PATH="$PATH:$HOME/.local/bin"  # poetry
 export PATH="$PATH:$HOME/scripts"
+export PATH="$PATH:$HOME/scripts/work/tps"
 
 # Aliases
 alias k="kubectl"
@@ -55,6 +56,7 @@ alias tfv="terraform validate"
 alias tn="trans --brief :no"
 alias te="trans --brief :en"
 alias things="~/scripts/things.sh"
+alias tnn='f() { ~/scripts/things.sh "$1" "#norsknote"; }; f'
 alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One'"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
