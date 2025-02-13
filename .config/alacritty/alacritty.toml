@@ -43,3 +43,6 @@ opacity = 1
 
 [scrolling]
 history = 10000
+
+[env]
+XCURSOR_SIZE = "16"
