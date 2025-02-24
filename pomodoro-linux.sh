@@ -12,13 +12,13 @@ pomodoro () {
     echo $val | lolcat
     timer ${pomo_options["$val"]}m
     spd-say "'$val' session done"
-    date
+    echo $(date +%H:%M) | lolcat
   else
     timer "${1}m"
     spd-say "Session done"
-    date
+    echo $(date +%H:%M) | lolcat
   fi
 }
 
-alias wo="pomodoro 'work'"
-alias br="pomodoro 'break'"
+alias pwo="pomodoro 'work'"
+alias pbr="pomodoro 'break'"
