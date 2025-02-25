@@ -37,3 +37,6 @@
 [submodule "tmux/plugins/catpuccin-tmux"]
 	path = tmux/plugins/catpuccin-tmux
 	url = https://github.com/catppuccin/tmux
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
