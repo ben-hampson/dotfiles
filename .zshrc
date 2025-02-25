@@ -35,6 +35,8 @@ export HOMEBREW_NO_ENV_HINTS="1"
 export PATH="$PATH:$HOME/.local/bin"  # poetry
 export PATH="$PATH:$HOME/scripts"
 export PATH="$PATH:$HOME/scripts/work/tps"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
 
 # Aliases
 alias k="kubectl"
