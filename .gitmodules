@@ -34,3 +34,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/ben-hampson/neovim-config
+[submodule "tmux/plugins/catpuccin-tmux"]
+	path = tmux/plugins/catpuccin-tmux
+	url = https://github.com/catppuccin/tmux
