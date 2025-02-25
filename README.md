@@ -14,3 +14,8 @@ stow . -vv
 You just need the TPM module, and then TPM will install all the other plugins listed in `tmux.conf`
 
 Once you have TPM cloned to `.config/tmux/plugins/tpm`, open `tmux`, hit the prefix (Ctrl-Space) and hit `I` to install the plugins.
+
+
+## Submodules
+
+`git submodule update --init --recursive` - Run this after every clone, pull, and checkout command to update the contents of submodule directories.
