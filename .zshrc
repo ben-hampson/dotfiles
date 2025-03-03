@@ -60,13 +60,13 @@ alias te="trans --brief :en"
 alias things="~/scripts/things.sh"
 alias tnn='f() { ~/scripts/things.sh "$1" "#norsknote"; }; f'
 alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One'"
+alias sd="cd ~ && cd \$(find * -maxdepth 1 -type d | fzf)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /home/linuxbrew/.linuxbrew/opt/fzf/shell/key-bindings.zsh
+source <(fzf --zsh)
 
 system=$(uname)
 
