@@ -4,16 +4,16 @@ Dotfiles using GNU Stow.
 ```bash
 apt install stow
 
-git clone https://github.com/ben-hampson/dotfiles.git ~/.config
-cd ~/.config/dotfiles
+git clone https://github.com/ben-hampson/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 stow . -vv
 ```
 
 ## tmux
 
-You just need the TPM module, and then TPM will install all the other plugins listed in `tmux.conf`
+Tmux plugins are kept as submodules.
 
-Once you have TPM cloned to `.config/tmux/plugins/tpm`, open `tmux`, hit the prefix (Ctrl-Space) and hit `I` to install the plugins.
+(Maybe irrelevant now because they are submodules?) Once you have TPM cloned to `.config/tmux/plugins/tpm`, open `tmux`, hit the prefix (Ctrl-Space) and hit `I` to install the plugins.
 
 
 ## Submodules
