@@ -1,0 +1,6 @@
+.config/espanso/match/
+.sgptrc
+.config/shell_gpt/roles/Code Generator.json
+.config/shell_gpt/roles/Shell Command Descriptor.json
+.config/shell_gpt/roles/Shell Command Generator.json
+.config/shell_gpt/roles/ShellGPT.json
