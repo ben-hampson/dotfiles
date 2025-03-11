@@ -33,14 +33,6 @@ save_to_clipboard = true
 decorations = "buttonless"
 opacity = 1
 
-# [window.dimensions]
-# columns = 2000
-# lines = 20
-
-# [window.position]
-# x = 0
-# y = 0
-
 [scrolling]
 history = 10000
 
