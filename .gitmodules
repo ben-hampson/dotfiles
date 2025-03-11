@@ -1,30 +1,6 @@
-[submodule ".config/.config/alacritty/catpuccin"]
-	path = .config/.config/alacritty/catpuccin
-	url = https://github.com/catppuccin/alacritty.git
-[submodule ".config/.config/tmux/tmux-sensible"]
-	path = .config/.config/tmux/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible.git
-[submodule ".config/.config/tmux/tmux-yank"]
-	path = .config/.config/tmux/tmux-yank
-	url = https://github.com/tmux-plugins/tmux-yank.git
-[submodule ".config/.config/tmux/tpm"]
-	path = .config/.config/tmux/tpm
-	url = https://github.com/tmux-plugins/tpm.git
-[submodule ".config/.config/tmux/plugins/vim-tmux-navigator"]
-	path = .config/.config/tmux/plugins/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule ".config/tmux/plugins/vim-tmux-navigator"]
-	path = .config/tmux/plugins/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
 [submodule ".config/tmux/plugins/tpm"]
 	path = .config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule ".config/tmux/plugins/tmux-yank"]
-	path = .config/tmux/plugins/tmux-yank
-	url = https://github.com/tmux-plugins/tmux-yank.git
-[submodule ".config/tmux/plugins/tmux-sensible"]
-	path = .config/tmux/plugins/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible.git
 [submodule ".config/alacritty/catpuccin"]
 	path = .config/alacritty/catpuccin
 	url = https://github.com/catppuccin/alacritty.git
@@ -34,3 +10,15 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/ben-hampson/neovim-config
+[submodule ".config/tmux/plugins/catppuccin-tmux"]
+	path = .config/tmux/plugins/catppuccin-tmux
+	url = https://git::@github.com/dreamsofcode-io/catppuccin-tmux
+[submodule ".config/tmux/plugins/tmux-sensible"]
+	path = .config/tmux/plugins/tmux-sensible
+	url = https://git::@github.com/tmux-plugins/tmux-sensible
+[submodule ".config/tmux/plugins/tmux-yank"]
+	path = .config/tmux/plugins/tmux-yank
+	url = https://git::@github.com/tmux-plugins/tmux-yank
+[submodule ".config/tmux/plugins/vim-tmux-navigator"]
+	path = .config/tmux/plugins/vim-tmux-navigator
+	url = https://git::@github.com/christoomey/vim-tmux-navigator
