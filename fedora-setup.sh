@@ -21,4 +21,4 @@ curl -s https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && sudo chmod +x
 pip install shell-gpt
 
 # Hyprland
-sudo dnf install -y rofi waybar
+sudo dnf install -y rofi waybar hyprpaper
