@@ -21,4 +21,5 @@ curl -s https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && sudo chmod +x
 pip install shell-gpt
 
 # Hyprland
-sudo dnf install -y rofi waybar hyprpaper
+sudo dnf install -y rofi waybar hyprpaper pipewire wireplumber fastfetch btop
+# sudo nano /usr/lib/systemd/logind.conf, set HandleLidSwitch=ignore to not suspend when closing lid, for clamshell mode.
