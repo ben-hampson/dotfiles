@@ -3,7 +3,6 @@
 sudo dnf install -y \
   speedtest-cli \
   btop \
-  espanso-wayland \
   fzf \
   1password \ # needs repos 
   translate-shell \
@@ -26,3 +25,7 @@ pip install shell-gpt
 sudo dnf install -y rofi-wayland waybar hyprpaper pipewire wireplumber fastfetch btop swaync blueman
 # sudo nano /usr/lib/systemd/logind.conf, set HandleLidSwitch=ignore to not suspend when closing lid, for clamshell mode.
 
+mkdir ~/log
+
+# Compile espanso:
+# https://espanso.org/docs/install/linux#x11-compile

@@ -37,6 +37,7 @@ export PATH="$PATH:$HOME/scripts"
 export PATH="$PATH:$HOME/scripts/work/tps"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
+export PATH="$PATH:/home/ben/.cargo/bin"
 
 # Aliases
 alias k="kubectl"
