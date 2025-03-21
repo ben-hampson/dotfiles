@@ -6,5 +6,5 @@ import = [
         "/home/ben/.config/alacritty/alacritty-linux.toml"
     ]
 
-[terminal.shell]
-program = "tmux"
+# [terminal.shell]
+# program = "tmux"
