@@ -9,7 +9,9 @@ sudo dnf install -y \
   translate-shell \
   lolcat \
   python3-pip \
-  mutt
+  mutt \
+  yq \
+  kubectl
 
 brew install \
   argocd \
@@ -23,3 +25,4 @@ pip install shell-gpt
 # Hyprland
 sudo dnf install -y rofi-wayland waybar hyprpaper pipewire wireplumber fastfetch btop swaync blueman
 # sudo nano /usr/lib/systemd/logind.conf, set HandleLidSwitch=ignore to not suspend when closing lid, for clamshell mode.
+
