@@ -23,7 +23,7 @@
         "temperature",
         "backlight",
         "keyboard-state",
-        "sway/language",
+        "hyprland/language",
         "battery",
         "battery#bat2",
         "clock",
@@ -46,6 +46,10 @@
             "active": "",
             "default": ""
         }
+    },
+    "hyprland/language": {
+        "format-gb": "GB",
+        "format-no": "NO",
     },
     "keyboard-state": {
         "numlock": true,
