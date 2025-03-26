@@ -22,3 +22,9 @@
 [submodule ".config/tmux/plugins/vim-tmux-navigator"]
 	path = .config/tmux/plugins/vim-tmux-navigator
 	url = https://git::@github.com/christoomey/vim-tmux-navigator
+[submodule ".config/oh-my-zsh/plugins/zsh-autosuggestions"]
+	path = .config/oh-my-zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".config/oh-my-zsh/themes/powerlevel10k"]
+	path = .config/oh-my-zsh/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

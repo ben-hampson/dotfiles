@@ -10,6 +10,8 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Path to ZSH plugins and themes.
+export ZSH_CUSTOM="$HOME/.config/oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
