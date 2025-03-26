@@ -1,12 +1,13 @@
 # dotfiles
 Dotfiles using GNU Stow.
 
-```bash
-apt install stow
-
+## Setup
+```sh
 git clone https://github.com/ben-hampson/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-stow . -vv
+./mac-setup.sh
+# or
+./fedora-setup.sh
 ```
 
 ## tmux
@@ -19,3 +20,7 @@ Tmux plugins are kept as submodules.
 ## Submodules
 
 `git submodule update --init --recursive` - Run this after every clone, pull, and checkout command to update the contents of submodule directories.
+
+To update the submodule commit to the remote repo's latest commit, `cd` into that dir and run `git pull origin master`.
+
+To update the submodule commit of all the submodules, `cd ~/dotfiles && git submodule foreach git pull`
