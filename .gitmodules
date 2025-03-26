@@ -28,3 +28,6 @@
 [submodule ".config/oh-my-zsh/themes/powerlevel10k"]
 	path = .config/oh-my-zsh/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "mpv/scripts/mpvacious"]
+	path = mpv/scripts/mpvacious
+	url = https://github.com/Ajatt-Tools/mpvacious.git
