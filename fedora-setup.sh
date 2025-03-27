@@ -31,3 +31,13 @@ mkdir ~/log
 
 # Compile espanso:
 # https://espanso.org/docs/install/linux#x11-compile
+
+# Install non-free media codecs, including AAC for high quality bluetooth audio.
+# https://discussion.fedoraproject.org/t/how-to-enable-full-multimedia-support-on-fedora-41-h-265-e-ac-3-h-264-and-more/147586
+sudo dnf5 install dnf5-plugins
+sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf update -y
+sudo dnf5 group install multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf5 group install sound-and-video
+# Restart required to get codecs working.
