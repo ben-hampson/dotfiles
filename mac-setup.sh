@@ -6,7 +6,7 @@ git submodule update --init --recursive
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm $HOME/.zshrc
 
-# stow
+# stow dotfiles
 cd $HOME/dotfiles
 git submodule update --init --recursive
 stow . -vv
