@@ -19,7 +19,10 @@ Tmux plugins are kept as submodules.
 
 ## Submodules
 
-`git submodule update --init --recursive` - Run this after every clone, pull, and checkout command to update the contents of submodule directories.
+Run this after every clone, pull, and checkout command to update the contents of submodule directories:
+```sh
+git submodule update --init --recursive
+```
 
 To update the submodule commit to the remote repo's latest commit, `cd` into that dir and run `git pull origin master`.
 
