@@ -50,3 +50,28 @@ sudo dnf update -y
 sudo dnf5 group install multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf5 group install sound-and-video
 # Restart required to get codecs working.
+
+# Nvidia drivers
+# This setup prevents problems with `systemctl suspend`
+# Relevant for all GPUS under 'Current Nvidia GPUs' on https://download.nvidia.com/XFree86/Linux-x86_64/495.44/README/supportedchips.html
+sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda libva libva-nvidia-driver
+# https://github.com/JaKooLit/Fedora-Hyprland/blob/main/install-scripts/nvidia.sh
+# Additional options to add to GRUB_CMDLINE_LINUX
+additional_options="rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=1 nvidia_drm.fbdev=1"
+
+# Check if additional options are already present in GRUB_CMDLINE_LINUX
+if grep -q "GRUB_CMDLINE_LINUX.*$additional_options" /etc/default/grub; then
+	echo "GRUB_CMDLINE_LINUX already contains the additional options" 2>&1 | tee -a "$LOG"
+else
+	# Append the additional options to GRUB_CMDLINE_LINUX
+	sudo sed -i "s/GRUB_CMDLINE_LINUX=\"/GRUB_CMDLINE_LINUX=\"$additional_options /" /etc/default/grub
+    echo "Added the additional options to GRUB_CMDLINE_LINUX" 2>&1 | tee -a "$LOG"
+fi
+
+# Update GRUB configuration. Reboot required.
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+sudo systemctl enable nvidia-suspend.service
+sudo systemctl enable nvidia-hibernate.service
+sudo systemctl enable nvidia-resume.service
+
