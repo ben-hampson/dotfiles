@@ -25,20 +25,12 @@
 	autoSetupRemote = true
 	default = current
 [credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
-        helper = !/usr/bin/gh auth git-credential
-[credential "https://github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+        helper = !gh auth git-credential
 [difftool]
-    prompt = true
+        prompt = true
 [diff]
-    tool = nvimdiff
+        tool = nvimdiff
 [difftool "nvimdiff"]
-    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+        cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
