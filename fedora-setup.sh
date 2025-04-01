@@ -75,3 +75,11 @@ sudo systemctl enable nvidia-suspend.service
 sudo systemctl enable nvidia-hibernate.service
 sudo systemctl enable nvidia-resume.service
 
+# Hyprshot
+cd ~/Downloads
+wget https://github.com/Gustash/Hyprshot/archive/refs/tags/1.3.0.zip
+unzip 1.3.0.zip
+chmod +x Hyprshot-1.3.0/hyprshot
+sudo mv Hyprshot-1.3.0/hyprshot /usr/local/bin/
+rm -rf Hyprshot-1.3.0
+rm 1.3.0.zip
