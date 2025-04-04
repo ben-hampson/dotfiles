@@ -21,7 +21,8 @@ sudo dnf install -y \
   python3-pip \
   mutt \
   yq \
-  kubectl
+  kubectl \
+  pipx
 
 brew install \
   argocd \
