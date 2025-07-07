@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-if [[ "$(hyprctl monitors)" =~ "\sDP-[0-9]+" ]]; then
+if [[ "$(hyprctl monitors)" =~ "\sDP-[0-9]+" || "$(hyprctl monitors)" =~ "\sHDMI-\w-[0-9]+" ]]; then
   echo "External monitor plugged in."
 
   if [[ $1 == "open" ]]; then
