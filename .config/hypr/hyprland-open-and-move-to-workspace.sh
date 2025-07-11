@@ -11,7 +11,7 @@ sleep 2
 hyprctl clients -j
 
 # Get this to work with $INITIAL_CLASS
-pid=$(hyprctl clients -j | jq ".[] | select(.initialClass == ${INITIAL_CLASS}) | .pid")
-
+pid=$(hyprctl clients -j | jq -r ".[] | select(.initialClass | contains(\"$INITIAL_CLASS\")) | .pid")
 echo $pid
+
 hyprctl dispatch movetoworkspacesilent ${WORKSPACE},pid:${pid}
