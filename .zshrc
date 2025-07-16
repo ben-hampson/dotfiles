@@ -1,4 +1,4 @@
-# NEVER PUT ANYTHING SENSITIVE IN HERE
+#sgpt --model gpt-4o-mini --role 'Norwegian All-in-One' --repl temp NEVER PUT ANYTHING SENSITIVE IN HERE
 # SENSITIVE DATA GOES IN .zshrc_local
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -63,7 +63,7 @@ alias tn="trans --brief :no"
 alias te="trans --brief :en"
 alias things="~/scripts/things.sh"
 alias tnn='f() { ~/scripts/things.sh "$1" "#norsknote"; }; f'
-alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One'"
+alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One' --repl temp"
 alias sd="cd ~ && cd \$(find * -maxdepth 1 -type d | fzf)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
