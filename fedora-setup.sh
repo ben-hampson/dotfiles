@@ -40,7 +40,21 @@ pip install shell-gpt
 
 # Hyprland
 sudo dnf copr enable solopasha/hyprland
-sudo dnf install -y hyprland rofi-wayland waybar hyprpaper pipewire wireplumber fastfetch btop swaync blueman xdg-desktop-portal-hyprland xdg-desktop-portal-gtk 
+sudo dnf install -y \
+  hyprland \
+  hyprlock \
+  rofi-wayland \
+  waybar \
+  hyprpaper \
+  pipewire \
+  wireplumber \
+  fastfetch \
+  btop \
+  swaync \
+  blueman \
+  xdg-desktop-portal-hyprland \
+  xdg-desktop-portal-gtk \
+  
 # sudo nano /usr/lib/systemd/logind.conf, set HandleLidSwitch=ignore to not suspend when closing lid, for clamshell mode.
 
 mkdir ~/log
