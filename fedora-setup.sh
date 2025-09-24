@@ -22,7 +22,8 @@ sudo dnf install -y \
   yq \
   kubectl \
   pipx \
-  timeshift
+  timeshift \
+  prename # perl-rename
 
 # 1Password
 sudo rpm --import https://downloads.1password.com/linux/keys/1password.asc
