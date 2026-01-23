@@ -12,6 +12,7 @@ hyprctl clients -j
 
 # Get this to work with $INITIAL_CLASS
 pid=$(hyprctl clients -j | jq -r ".[] | select(.initialClass | contains(\"$INITIAL_CLASS\")) | .pid")
-echo $pid
+echo "$(date)"
+echo "Slack: PID: $pid"
 
 hyprctl dispatch movetoworkspacesilent ${WORKSPACE},pid:${pid}
