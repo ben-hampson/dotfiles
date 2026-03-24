@@ -2,11 +2,21 @@ customProviders [
   {
     name: nexus
     url: "https://nexus.finods.com/nexus/#browse/search=keyword=%s"
-    tags: [example]
   },
   {
     name: artifactory
     url: "https://artifactory.finods.com/ui/packages?name=%s&type=packages"
-    tags: [example]
+  },
+  {
+    name: "arg"
+    url: "https://argocd-server-payments-argocd.apps.os-global.finods.com/applications?search=%s"
+  },
+  {
+    name: "arr"
+    url: "https://argocd-server-payments-argocd.apps.os-restricted.finods.com/applications?search=%s"
+  },
+  {
+    name: "arc"
+    url: "https://argocd-server-payments-argocd.apps.os-cts.finods.com/applications?search=%s"
   },
 ]
