@@ -1,0 +1,12 @@
+customProviders [
+  {
+    name: nexus
+    url: "https://nexus.finods.com/nexus/#browse/search=keyword=%s"
+    tags: [example]
+  },
+  {
+    name: artifactory
+    url: "https://artifactory.finods.com/ui/packages?name=%s&type=packages"
+    tags: [example]
+  },
+]
