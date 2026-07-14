@@ -40,12 +40,22 @@ export PATH="$PATH:$HOME/scripts/work"
 export PATH="$PATH:$HOME/scripts/work/tps"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
+export PATH="/home/ben/.bun/bin:$PATH"
 
 # Aliases
 alias k="kubectl"
 alias bu="brew update && brew upgrade && brew cleanup"
 alias uu="sudo apt update && sudo apt upgrade"
-alias update="sudo dnf update -y && sudo dnf upgrade -y && sudo dnf autoremove -y && flatpak -y update && brew upgrade && brew cleanup && gnome-software --autoupdate --interaction=none --mode=updates && nvim --headless "+Lazy! sync" +qa"
+alias update="sudo dnf update -y && \
+  sudo dnf upgrade -y && \
+  sudo dnf autoremove -y && \
+  flatpak -y update && \
+  brew upgrade && \
+  brew cleanup &&  \
+  nvim --headless '+Lazy! sync' +qa && \
+  pkcon refresh force -c -1 && \
+  pkcon update --only-download && \
+  pkcon offline-trigger"
 alias ls="ls -Ah --color=always"
 alias l1="ls -1"
 alias dps="docker ps"
@@ -64,7 +74,7 @@ alias tn="trans --brief :no"
 alias te="trans --brief :en"
 alias things="~/scripts/things.sh"
 alias tnn='f() { ~/scripts/things.sh "$1" "#norsknote"; }; f'
-alias ngpt="sgpt --model gpt-4o-mini --role 'Norwegian All-in-One' --repl temp"
+alias ngpt="source ~/.env && sgpt --model gpt-4o-mini --role 'Norwegian All-in-One' --repl temp"
 alias sd="cd ~ && cd \$(find * -maxdepth 1 -type d | fzf)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
